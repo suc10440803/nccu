@@ -8,5 +8,23 @@
   <script>
     window.onmessage = (e) => {if (e.data.hasOwnProperty("frameHeight")){document.getElementById("iframe-" + e.data.board_token).style.height = `${e.data.frameHeight}px`;}};
   </script>
+    <style>
+    html {
+      background-color: white;
+    }
+    video {
+      display: none;
+    }
+    .adthrive {
+      display: none;
+    }
+    .adthrive-player-container {
+      display: none;
+    }
+    .container {
+      overflow: hidden;
+      height: 30rem;
+    }
+  </style>
 </body>
 </html>
