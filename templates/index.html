@@ -6,24 +6,26 @@
 <body>
 <iframe id="iframe-cxjtirtbdcr" src="https://keepthescore.co/embed/ybajoegosee/" style="width:100%;border:none;"></iframe>
   <script>
-    window.onmessage = (e) => {if (e.data.hasOwnProperty("frameHeight")){document.getElementById("iframe-" + e.data.board_token).style.height = `${e.data.frameHeight}px`;}};
+    window.onmessage = (e) => {if (e.data.hasOwnProperty("frameHeight")){document.getElementById("iframe-" + e.data.board_token).style.height = '100vh';}};
   </script>
-    <style>
+<style>
     html {
       background-color: white;
     }
     video {
-      display: none;
-    }
-    .adthrive {
-      display: none;
-    }
-    .adthrive-player-container {
-      display: none;
+      display: none !important;
     }
     .container {
-      overflow: hidden;
-      height: 30rem;
+      height: 100vh;
+    }
+    .adthrive {
+      display: none !important;
+    }
+    .adthrive-player-container {
+      display: none !important;
+    }
+    .modal {
+      display: none !important;
     }
   </style>
 </body>
